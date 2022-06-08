@@ -1,0 +1,85 @@
+html {
+    font: 500 16px/1 'Montserrat', serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 1150px;
+}
+
+.header {
+    position: relative;
+    background-color: #FFFFFF;
+    padding-top: 8px;
+}
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #f26600;
+}
+.headerWrapper {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+}
+.infoInner {
+    display: flex;
+    flex-direction: column;
+}
+.infoInner:first-child {
+    margin-right: 20px;
+}
+.infoValue {
+    font-size: 14px;
+    font-weight: 700;
+}
+.infoHightlight {
+    color: #9BA4AF;
+}
+.infoAdress {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+.socialCaption {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9BA4AF;
+    margin-right: 30px;
+    font-weight: 700;
+}
+.socialList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.socialListItem:not(:last-child) {
+    margin-right: 15px;
+}
+.socialLink {
+    display: block;
+}
+.socialIcon {
+    width: 30px;
+}
