@@ -1,7 +1,17 @@
 html {
-    font: 500 16px/1 'Montserrat', serif;
+    font: 500 14px/1 'Montserrat', serif;
     background-color: #FFFFFF;
     color: #000000;
+}
+a {
+    color: inherit;
+    cursor: pointer;
+    transition: color .2s;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #f26600;
 }
 
 .wrapper {
@@ -48,13 +58,16 @@ html {
 .infoValue {
     font-size: 14px;
     font-weight: 700;
+    height: 17px;
+}
+.infoValue:first-child {
+    margin-bottom: 5px;
 }
 .infoHightlight {
     color: #9BA4AF;
 }
 .infoAdress {
     text-transform: uppercase;
-    font-size: 12px;
 }
 
 .social {
@@ -67,6 +80,7 @@ html {
     color: #9BA4AF;
     margin-right: 30px;
     font-weight: 700;
+    letter-spacing: 0.05em;
 }
 .socialList {
     list-style: none;
@@ -79,7 +93,84 @@ html {
 }
 .socialLink {
     display: block;
+    cursor: pointer;
+}
+.socialLink:hover .socialIcon,
+.socialLink:focus .socialIcon {
+    transform: scale(1.06);
+}
+.socialLink:active .socialIcon {
+    transform: scale(0.96);
 }
 .socialIcon {
     width: 30px;
+    transition: transform .2s;
+    transform: scale(1);
+}
+
+.menu {
+    background-color: #ebedef;
+    height: 50px;
+}
+.menufixed {
+    height: 50px;
+}
+.menuInner {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+.menuLink {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    flex-shrink: 0;
+}
+.menuSeparator {
+    height: 2px;
+    background-color: #FFFFFF;
+    display: block;
+    flex-basis: 100%;
+    margin: 0 10px;
+}
+
+.footer {
+    background-image: url(../images/footer.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footerBottom {
+    color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+.footerBottom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #f26600;
+}
+.footerLink {
+    margin-left: auto;
+}
+.footerBottomWrapper {
+    display: flex;
+}
+.footerTopWrapper {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
