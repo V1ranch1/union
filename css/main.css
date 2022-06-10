@@ -3,6 +3,10 @@ html {
     background-color: #FFFFFF;
     color: #000000;
 }
+html,
+body {
+    height: 100%;
+}
 a {
     color: inherit;
     cursor: pointer;
@@ -14,6 +18,11 @@ a:focus {
     color: #f26600;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 .wrapper {
     margin: 0 auto;
     max-width: 1110px;
@@ -44,6 +53,19 @@ a:focus {
     align-items: center;
     justify-content: space-between;
 }
+.headerInfo, 
+.headerSocial {
+    width: 445px;
+}
+.headerSocial {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    user-select: none;
+    height: 150px;
+}
 
 .info {
     display: flex;
@@ -52,22 +74,46 @@ a:focus {
     display: flex;
     flex-direction: column;
 }
+.info_footer .infoInner {
+    flex-direction: row;
+}
 .infoInner:first-child {
     margin-right: 20px;
+}
+.info_footer .infoInner:first-child {
+    margin-right: 0;
 }
 .infoValue {
     font-size: 14px;
     font-weight: 700;
     height: 17px;
+    color: #000000;
 }
 .infoValue:first-child {
     margin-bottom: 5px;
 }
+.info_footer .infoValue {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.info_footer .infoValue:first-child {
+    margin-bottom: 0;
+    margin-right: 20px;
+}
 .infoHightlight {
     color: #9BA4AF;
+    font-size: 14px;
+}
+.info_footer .infoHightlight {
+    font-size: 16px;
 }
 .infoAdress {
     text-transform: uppercase;
+    letter-spacing: 00.05em;
+}
+.infoPhone:hover,
+.infoPhone:focus {
+    color: #f26600;
 }
 
 .social {
@@ -106,11 +152,16 @@ a:focus {
     width: 30px;
     transition: transform .2s;
     transform: scale(1);
+    user-select: none;
 }
 
 .menu {
     background-color: #ebedef;
     height: 50px;
+}
+.menu_footer {
+    background-color: transparent;
+    margin-bottom: 50px;
 }
 .menufixed {
     height: 50px;
@@ -129,6 +180,14 @@ a:focus {
     text-transform: uppercase;
     color: #000000;
     flex-shrink: 0;
+    user-select: none;
+}
+.menu .menuLink:hover,
+.menu .menuLink:focus {
+    color: #f26600;
+}
+.menu_footer .menuLink {
+    color: #FFFFFF;
 }
 .menuSeparator {
     height: 2px;
@@ -137,12 +196,17 @@ a:focus {
     flex-basis: 100%;
     margin: 0 10px;
 }
+.menu_footer .menuSeparator {
+    background-color: rgba(255, 255, 255, .3);
+}
 
 .footer {
     background-image: url(../images/footer.jpg);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: auto;
+    padding-top: 100px;
 }
 .footerBottom {
     color: #FFFFFF;
@@ -167,10 +231,19 @@ a:focus {
 .footerBottomWrapper {
     display: flex;
 }
+.footerTop {
+    padding-bottom: 50px;
+}
 .footerTopWrapper {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
     align-items: center;
     justify-content: space-between;
+}
+.footerInfo, 
+.footerSocial {
+    width: 445px;
+}
+.footerSocial {
+    display: flex;
+    justify-content: flex-end;
 }
