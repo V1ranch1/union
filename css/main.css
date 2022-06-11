@@ -25,10 +25,50 @@ a:focus {
 }
 .wrapper {
     margin: 0 auto;
-    max-width: 1110px;
+    max-width: 1150px;
     padding: 0 20px;
     box-sizing: border-box;
-    width: 1150px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f26600;
+    color: #FFFFFF;
+    border: 0;
+    height: 40px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .05em;
+    transition: all .4s;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    font-weight: 700;
+}
+.button_size_big {
+    height: 50px;
+    font-size: 14px;
+}
+.button_style_white {
+    background-color: #ffffff;
+    color: #3E5ABE;
+}
+.button:hover,
+.button:focus {
+    background-color: #3E5ABE;
+    box-shadow: 0 10px 10px rgba(0 , 0, 0, .1);
+}
+.button:active {
+    box-shadow: none;
+}
+.button_style_white:hover,
+.button_style_white:focus {
+    color: #f26600;
+    background-color: #ffffff;
 }
 
 .header {
@@ -246,4 +286,91 @@ a:focus {
 .footerSocial {
     display: flex;
     justify-content: flex-end;
+}
+
+.banner {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/banner.jpg);
+}
+.bannerWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 116px;
+    padding-bottom: 116px;
+}
+.bannerTitle {
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 824px;
+    margin: 0;
+}
+.bannerText {
+    color:#FFFFFF;
+    max-width: 540px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bannerTextLine {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+}
+.bannerTextLine:first-child {
+    margin-bottom: 10px;
+}
+
+.buttonList {
+    background-color: #ebedef;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+.buttonList::before,
+.buttonList::after {
+    content: "";
+    display: block;
+    width: 774px;
+    height: 773px;
+    background-image: url(../images/screw.svg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.buttonList::before {
+    top: -387px;
+    left:-387px;
+}
+.buttonList::after {
+    bottom: -387px;
+    right: -387px;
+}
+.buttonListTitle {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+.buttonListInner {
+    margin: 45px -5px -5px;
+    width: calc(100% + 5px);
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttonListInnerItem {
+    padding: 5px;
 }
