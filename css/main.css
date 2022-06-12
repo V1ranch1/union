@@ -42,7 +42,7 @@ a:focus {
     border-radius: 10px;
     text-transform: uppercase;
     font-size: 12px;
-    letter-spacing: .05em;
+    letter-spacing: .05rem;
     transition: all .4s;
     cursor: pointer;
     user-select: none;
@@ -149,7 +149,7 @@ a:focus {
 }
 .infoAdress {
     text-transform: uppercase;
-    letter-spacing: 00.05em;
+    letter-spacing: .05rem;
 }
 .infoPhone:hover,
 .infoPhone:focus {
@@ -166,7 +166,7 @@ a:focus {
     color: #9BA4AF;
     margin-right: 30px;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: .05rem;
 }
 .socialList {
     list-style: none;
@@ -216,7 +216,7 @@ a:focus {
 }
 .menuLink {
     font-size: 14px;
-    letter-spacing: 0.05em;
+    letter-spacing: .05rem;
     text-transform: uppercase;
     color: #000000;
     flex-shrink: 0;
@@ -304,7 +304,7 @@ a:focus {
 .bannerTitle {
     font-weight: 900;
     font-size: 48px;
-    letter-spacing: 0.05em;
+    letter-spacing: .05rem;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
@@ -319,7 +319,7 @@ a:focus {
 }
 .bannerTextLine {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     display: block;
     text-align: center;
 }
@@ -327,14 +327,14 @@ a:focus {
     margin-bottom: 10px;
 }
 
-.buttonList {
+.buttonBlock {
     background-color: #ebedef;
     padding: 100px 0;
     position: relative;
     overflow: hidden;
 }
-.buttonList::before,
-.buttonList::after {
+.buttonBlock::before,
+.buttonBlock::after {
     content: "";
     display: block;
     width: 774px;
@@ -345,24 +345,24 @@ a:focus {
     background-repeat: no-repeat;
     position: absolute;
 }
-.buttonList::before {
+.buttonBlock::before {
     top: -387px;
     left:-387px;
 }
-.buttonList::after {
+.buttonBlock::after {
     bottom: -387px;
     right: -387px;
 }
-.buttonListTitle {
+.buttonBlockTitle {
     font-size: 32px;
     font-weight: 900;
-    letter-spacing: 0.05em;
+    letter-spacing: .05rem;
     color: #000000;
     text-align: center;
     margin: 0;
     text-transform: uppercase;
 }
-.buttonListInner {
+.buttonBlockList {
     margin: 45px -5px -5px;
     width: calc(100% + 5px);
     padding: 0;
@@ -371,6 +371,46 @@ a:focus {
     flex-wrap: wrap;
     justify-content: center;
 }
-.buttonListInnerItem {
+.buttonBlockListItem {
     padding: 5px;
+}
+
+.iconsBlock {
+    padding: 100px 0;
+}
+.iconsBlockCaption {
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+.iconsBlockList {
+    margin: 50px 0 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.iconsBlockListItem {
+    width: 25%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.iconsBlockImage {
+    display: block;
+    max-width: 100px;
+    user-select: none;
+}
+.iconsBlockListItemCaption {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
 }
