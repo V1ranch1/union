@@ -414,3 +414,94 @@ a:focus {
     font-size: 16px;
     line-height: 1.5;
 }
+
+.numbersBlock {
+    background-color: #3E5ABE;
+    padding: 100px 0;
+    background-image: url(../images/pattern.png);
+}
+.numbersBlockTitle {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    display: block;
+    text-align: center;
+}
+.numbersBlockList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px -30px -30px;
+    padding: 0;
+    list-style: none;
+    width: calc(100% + 60px);
+}
+.numbersBlockListItem {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    counter-increment: number;
+}
+.numbersBlockBorder {
+    padding: 30px;
+    position: relative;
+    display: flex;
+    height: calc(100% - 60px);
+}
+.numbersBlockListItem:nth-child(even) .numbersBlockBorder::before,
+.numbersBlockListItem:nth-child(n+3) .numbersBlockBorder::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .3);
+}
+.numbersBlockBorder::before {
+    top: 0;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+}
+.numbersBlockBorder::after {
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+.numbersBlockNumber::after {
+    content: counter(number);
+    color: #FFFFFF;
+    height: 70px;
+    width: 70px;
+    background-color: #f26600;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+    flex-shrink: 0;
+    user-select: none;
+    margin-right: 30px;
+}
+.numbersBlockInfo {
+    
+}
+.numbersBlockCaption {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: left;
+    display: block;
+    line-height: 1.5;
+}
+.numbersBlockText {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: left;
+    display: block;
+    line-height: 1.5;
+    margin: 10px 0 0;
+}
