@@ -160,6 +160,10 @@ a:focus {
     display: flex;
     align-items: center;
 }
+.social_column {
+    flex-direction: column;
+    align-items: flex-start;
+}
 .socialCaption {
     font-size: 12px;
     text-transform: uppercase;
@@ -167,6 +171,11 @@ a:focus {
     margin-right: 30px;
     font-weight: 700;
     letter-spacing: .05rem;
+}
+.social_column .socialCaption {
+    margin-right: 0;
+    margin-bottom: 10px;
+    line-height: 1.25;
 }
 .socialList {
     list-style: none;
@@ -550,4 +559,93 @@ a:focus {
     display: block;
     line-height: 1.5;
     margin: 10px 0 0;
+}
+
+.catalog {
+    background-color: #ebedef;
+    padding: 100px 0;
+}
+
+.form {
+    background-color: #3E5ABE;
+    padding: 100px 0;
+}
+.formInner {
+    background-color: #ffffff;
+    padding: 100px;
+    border-radius: 30px;
+}
+
+.infoBlock {
+    padding: 350px 0 50px;
+    position: relative;
+}
+.infoBlockMap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+.infoBlockMap > ymaps {
+    width: 100% !important;
+    height: 100% !important;
+}
+.infoBlockInner {
+    position: relative;
+    z-index: 2;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0.4px 4px rgba(0, 0, 0, .25);
+}
+.infoBlockInnerCaption {
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: .05rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+.infoBlockInnerList {
+    list-style: none;
+    display: flex;
+    margin: 30px -15px 0;
+    padding: 0;
+    width: calc(100% + 30px);
+}
+.infoBlockInnerItem {
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.infoBlockInnerItemCaption {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .05rem;
+    color:#9BA4AF;
+    text-transform: uppercase;
+    line-height: 1.25;
+}
+.infoBlockInnerItemText {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+}
+.infoBlockInnerItemTextValue {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 5px;
+}
+.infoBlockInnerItemTextValue + .infoBlockInnerItemTextValue {
+    margin-top: 5px;
+}
+.infoBlockInnerItemTextValueHightlight {
+    color:#9BA4AF;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
 }
