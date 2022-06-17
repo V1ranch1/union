@@ -57,13 +57,20 @@ a:focus {
     background-color: #ffffff;
     color: #3E5ABE;
 }
+.button_active {
+    background-color: #9BA4AF !important;
+    color: #FFFFFF !important;
+}
 .button:hover,
 .button:focus {
     background-color: #3E5ABE;
+}
+.button:not(.button_noShadow):hover,
+.button:not(.button_noShadow):focus {
     box-shadow: 0 10px 10px rgba(0 , 0, 0, .1);
 }
 .button:active {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 .button_style_white:hover,
 .button_style_white:focus {
@@ -442,20 +449,22 @@ a:focus {
     display: block;
 }
 .iconsBlockList {
-    margin: 50px 0 0;
+    margin: 50px -15px 0;
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    width: calc(100% + 30px);
 }
 .iconsBlockListItem {
     width: 25%;
-    padding-right: 20px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 15px;
 }
+
 .iconsBlockImage {
     display: block;
     max-width: 100px;
@@ -540,9 +549,6 @@ a:focus {
     user-select: none;
     margin-right: 30px;
 }
-.numbersBlockInfo {
-    
-}
 .numbersBlockCaption {
     font-weight: 700;
     font-size: 20px;
@@ -564,6 +570,99 @@ a:focus {
 .catalog {
     background-color: #ebedef;
     padding: 100px 0;
+}
+.catalogTitle {
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: .05rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.catalogFilter {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.catalogFilterInner {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+}
+.catalogList {
+    list-style: none;
+    margin: 5px -15px -15px;
+    width: calc(100% + 30px);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalogItem {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.catalogItemInner {
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 30px;
+    transition: background .4s;
+}
+.catalogItem_selected .catalogItemInner {
+    background-color: #FFFFFF;
+}
+.catalogItemInfo {
+    display: flex;
+}
+.catalogItemImage {
+    flex-shrink: 0;
+    width: 100px;
+    display: block;
+    user-select: none;
+}
+.catalogItemModel {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.catalogItemModelCaption {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.catalogItemModelCars {
+    margin-top: auto;
+    margin-bottom: 3px;
+}
+.catalogItemModelCarsCaption {
+    color: #9BA4AF;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .05rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.catalogItemModelCarsList {
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 0;
+    display: flex;
+}
+.catalogItemModelCarsItem {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.catalogItemModelCarsItem:not(:last-child) {
+    margin-right: 10px;
+}
+.catalogItemText {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.catalogItemButton {
+    margin-top: 20px;
 }
 
 .form {
