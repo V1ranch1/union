@@ -31,3 +31,13 @@ document.querySelectorAll('.formSelect').forEach((item) => {
         }, false);
     });
 });
+
+const menu = document.querySelector('.menu');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 198) {
+        menu.classList.add('menu_fixed');
+    } else {
+        menu.classList.remove('menu_fixed');
+    }
+});
