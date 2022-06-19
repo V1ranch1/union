@@ -8,7 +8,7 @@ body {
     height: 100%;
 }
 a {
-    color: inherit;
+    color: #3E5ABE;
     cursor: pointer;
     transition: color .2s;
     text-decoration: none;
@@ -42,12 +42,13 @@ a:focus {
     border-radius: 10px;
     text-transform: uppercase;
     font-size: 12px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     transition: all .4s;
     cursor: pointer;
     user-select: none;
     white-space: nowrap;
     font-weight: 700;
+    box-shadow: 0 10px 10px rgba(0 , 0, 0, .1);
 }
 .button_size_big {
     height: 50px;
@@ -61,12 +62,16 @@ a:focus {
     background-color: #9BA4AF !important;
     color: #FFFFFF !important;
 }
+.button_noShadow,
+.button_hoverShadow {
+    box-shadow: none;
+}
 .button:hover,
 .button:focus {
     background-color: #3E5ABE;
 }
-.button:not(.button_noShadow):hover,
-.button:not(.button_noShadow):focus {
+.button_hoverShadow:hover,
+.button_hoverShadow:focus {
     box-shadow: 0 10px 10px rgba(0 , 0, 0, .1);
 }
 .button:active {
@@ -156,7 +161,7 @@ a:focus {
 }
 .infoAdress {
     text-transform: uppercase;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
 }
 .infoPhone:hover,
 .infoPhone:focus {
@@ -177,7 +182,7 @@ a:focus {
     color: #9BA4AF;
     margin-right: 30px;
     font-weight: 700;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
 }
 .social_column .socialCaption {
     margin-right: 0;
@@ -232,7 +237,7 @@ a:focus {
 }
 .menuLink {
     font-size: 14px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     text-transform: uppercase;
     color: #000000;
     flex-shrink: 0;
@@ -283,6 +288,7 @@ a:focus {
 }
 .footerLink {
     margin-left: auto;
+    color: inherit;
 }
 .footerBottomWrapper {
     display: flex;
@@ -320,7 +326,7 @@ a:focus {
 .bannerTitle {
     font-weight: 900;
     font-size: 48px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
@@ -376,7 +382,7 @@ a:focus {
 .sliderText {
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     color: #3E5ABE;
     display: block;
     text-transform: uppercase;
@@ -418,7 +424,7 @@ a:focus {
 .buttonBlockTitle {
     font-size: 32px;
     font-weight: 900;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     color: #000000;
     text-align: center;
     margin: 0;
@@ -443,7 +449,7 @@ a:focus {
 .iconsBlockCaption {
     font-weight: 900;
     font-size: 32px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     text-transform: uppercase;
     text-align: center;
     display: block;
@@ -489,7 +495,7 @@ a:focus {
     color: #FFFFFF;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     display: block;
     text-align: center;
 }
@@ -574,7 +580,7 @@ a:focus {
 .catalogTitle {
     font-weight: 900;
     font-size: 32px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -638,7 +644,7 @@ a:focus {
     color: #9BA4AF;
     font-weight: 700;
     font-size: 12px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     line-height: 1.5;
     text-transform: uppercase;
 }
@@ -666,13 +672,162 @@ a:focus {
 }
 
 .form {
-    background-color: #3E5ABE;
+    background-image: url(../images/form.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 100px 0;
 }
 .formInner {
     background-color: #ffffff;
     padding: 100px;
     border-radius: 30px;
+}
+.formInnerCaption {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: .05em;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.formFields {
+    margin-top: 50px;
+}
+.formRow {
+    display: flex;
+}
+.formRow:not(:first-child) {
+    margin-top: 30px;
+}
+.formField:not(:first-child) {
+    margin-left: 30px;
+}
+.formField {
+    flex: 1;
+}
+.formLabel {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #9BA4AF;
+}
+.formFieldInner {
+    margin-top: 10px;
+    display: flex;
+}
+.formColumn_left {
+    margin-right: 5px;
+}
+.formColumn_right {
+    margin-left: 5px;
+}
+.formInputContainer {
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+}
+.formInput, 
+.formTextarea {
+    border: 0;
+    background-color: #EBEDEF;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    outline: 0;
+    flex: 1;    
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.formInput {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.formInput_withIcon {
+    padding-right: 50px;
+}
+.formTextarea {
+    height: 100px;
+    resize: none;
+}
+.formSelect {
+    flex: 1;
+    position: relative;
+    user-select: none;
+}
+.formSelectHidden {
+    display: none;
+}
+.formSelectIcon::after {
+    transition: transform .4s;
+    transform: rotate(0);
+}
+.formSelect_active .formSelectIcon::after {
+    transform: rotate(180deg);
+}
+.formSelectValues {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 10px 10px rgba(0 , 0, 0, .1);
+}
+.formSelect_active .formSelectValues {
+    display: block;
+}
+.formSelectValue {
+    background-color: #EBEDEF;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.formSelectValue:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.formSelectValue:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.formFooter {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.formFooterText {
+    margin-right: auto;
+    color: #9BA4AF;
+}
+.formIcon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+    z-index: 2;  
+}
+.formIcon_calendar::after {
+    background-image: url(../images/icons/calendar.png);
+}
+.formIcon_arrow::after {
+    background-image: url(../images/icons/arrow.png);
 }
 
 .infoBlock {
@@ -703,7 +858,7 @@ a:focus {
 .infoBlockInnerCaption {
     font-weight: 900;
     font-size: 32px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     color: #000000;
     text-transform: uppercase;
 }
@@ -722,7 +877,7 @@ a:focus {
 .infoBlockInnerItemCaption {
     font-weight: 700;
     font-size: 12px;
-    letter-spacing: .05rem;
+    letter-spacing: .05em;
     color:#9BA4AF;
     text-transform: uppercase;
     line-height: 1.25;

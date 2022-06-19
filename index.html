@@ -10,11 +10,11 @@
   <meta name="description" content="Description">
   <title>Юнион Вариаторы</title>
 
-  <link rel="icon" href="./favicon.ico" />
-  <link rel="apple-touch-icon" href="./favicon192.png" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-
+  <link rel="icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon192.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/datepicker.min.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
@@ -150,37 +150,37 @@
                 <h2 class="buttonBlockTitle">Какие вариаторы мы чиним</h2>
                 <ul class="buttonBlockList">
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">JF010E (RE0F09A) [NISSAN]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">JF010E (RE0F09A) [NISSAN]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">JF016E (RE0F10D) [NISSAN]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">JF016E (RE0F10D) [NISSAN]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">W1CJC (F1CJC) [MITSUBISHI]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">W1CJC (F1CJC) [MITSUBISHI]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">RE0F06A [NISSAN]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">RE0F06A [NISSAN]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">JF011E (RE0F10A) [NISSAN]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">JF011E (RE0F10A) [NISSAN]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">JF017E (RE0F10E) [NISSAN]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">JF017E (RE0F10E) [NISSAN]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">FK0 (FK8) [RENAULT]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">FK0 (FK8) [RENAULT]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">F1CJB [MITSUBISHI]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">F1CJB [MITSUBISHI]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">JF015E (RE0F11A) [NISSAN]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">JF015E (RE0F11A) [NISSAN]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">W1CJA (F1CJA) [MITSUBISHI, PEUGEOT, CITROEN]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">W1CJA (F1CJA) [MITSUBISHI, PEUGEOT, CITROEN]</button>
                     </li>
                     <li class="buttonBlockListItem">
-                        <button class="button button_size_big button_style_white">F1C1A [MITSUBISHI]</button>
+                        <button class="button button_size_big button_style_white button_hoverShadow">F1C1A [MITSUBISHI]</button>
                     </li>
                 </ul>
             </div>
@@ -352,9 +352,77 @@
 
         <section class="form">
             <div class="wrapper">
-                <div class="formInner">
+                <form class="formInner">
+
                     <span class="formInnerCaption">Заявка</span>
-                </div>
+
+                    <div class="formFields">
+
+                        <div class="formRow">
+                            <div class="formField">
+                                <label class="formLabel">Имя</label>
+                                <div class="formFieldInner">
+                                    <input class="formInput" type="text" name="name">
+                                </div>
+                            </div>
+                            <div class="formField">
+                                <label class="formLabel">Телефон</label>
+                                <div class="formFieldInner">
+                                    <input class="formInput" type="text" name="phone">
+                                </div>
+                            </div>
+                            <div class="formField">
+                                <label class="formLabel">Почта</label>
+                                <div class="formFieldInner">
+                                    <input class="formInput" type="text" name="email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <div class="formField">
+                                <label class="formLabel">Время записи</label>
+                                <div class="formFieldInner">
+                                    <div class="formColumn formColumn_left formInputContainer formIcon formIcon_calendar formCalendar">
+                                        <input class="formInput formInput_withIcon" type="text" name="date">
+                                    </div>
+                                    <div class="formColumn formColumn_right formSelect">
+                                        <div class="formInput formInput_withIcon formIcon formIcon_arrow formSelectIcon">
+                                            <span class="formSelectActive">19:00</span>
+                                            <div class="formSelectValues">
+                                                <div class="formSelectValue">18:00</div>
+                                                <div class="formSelectValue">19:00</div>
+                                                <div class="formSelectValue">20:00</div>
+                                                <div class="formSelectValue">21:00</div>
+                                            </div>
+                                        </div>
+                                        <select name="time" class="formSelectHidden">
+                                            <option value="19:00">18:00</option>
+                                            <option value="20:00">19:00</option>
+                                            <option value="19:00">20:00</option>
+                                            <option value="20:00">21:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <div class="formField">
+                                <label class="formLabel">Комментарий</label>
+                                <div class="formFieldInner">
+                                    <textarea class="formTextarea" name="comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formFooter">
+                        <span class="formFooterText">Нажимая кнопку вы соглашаетесь с <a href="#">условиями использования</a></span>
+                        <button class="button button_size_big">Оставить заявку</button>
+                    </div>
+
+                </form>
             </div>
         </section>
 
@@ -488,12 +556,16 @@
             <div class="footerBottom">
                 <div class="wrapper footerBottomWrapper">
                     <span class="footerCopyright">&copy; Юнион Вариаторы, 2022</span>
-                    <a class="footerLink">ADVCREATIVE</a>
+                    <a class="footerLink" href="#" rel="nofollow noopenner noreferrer" target="_blank">ADVCREATIVE</a>
                 </div>
             </div>
 
         </footer>
 
     </div>
+
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 </html>
