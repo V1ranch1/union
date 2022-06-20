@@ -41,3 +41,14 @@ window.addEventListener('scroll', () => {
         menu.classList.remove('menu_fixed');
     }
 });
+
+document.querySelectorAll('.menuLink').forEach((link) => {
+    link.addEventListener('click', (e) => {
+        const id = link.getAttribute('href').substring(1);
+        const element = document.getElementById(id);
+        element.scrollIntoView({
+            behavior: 'smooth',
+        });
+        e.preventDefault();
+    });
+});

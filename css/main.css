@@ -59,7 +59,6 @@ a:focus {
 .button_style_white {
     background-color: #ffffff;
     color: #3E5ABE;
-    border: 1px solid #ebedef;
 }
 .button_active {
     background-color: #9BA4AF !important;
@@ -84,6 +83,26 @@ a:focus {
 .button_style_white:focus {
     color: #f26600;
     background-color: #ffffff;
+}
+
+.subtitle {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: .05em;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+@media (max-width: 425px) {
+    .subtitle {
+        font-size: 24px;
+    }
 }
 
 .header {
@@ -112,9 +131,33 @@ a:focus {
 .headerSocial {
     width: 445px;
 }
+.headerInfo {
+    padding-right: 20px;
+}
 .headerSocial {
     display: flex;
     justify-content: flex-end;
+    padding-left: 20px;
+}
+@media (max-width: 1024px) {
+    .headerWrapper {
+        flex-direction: column;
+    }
+    .headerLogo {
+        order: 1;
+    }
+    .headerInfo {
+        order: 2;
+        padding-right: 0;
+        width: auto;
+        margin-top: 20px;
+    }
+    .headerSocial {
+        order: 3;
+        padding-left: 0;
+        width: auto;
+        margin-top: 20px;
+    }
 }
 
 .logo {
@@ -124,6 +167,7 @@ a:focus {
 
 .info {
     display: flex;
+    align-items: center;
 }
 .infoInner {
     display: flex;
@@ -141,7 +185,7 @@ a:focus {
 .infoValue {
     font-size: 14px;
     font-weight: 700;
-    height: 17px;
+    min-height: 17px;
     color: #000000;
 }
 .infoValue:first-child {
@@ -166,9 +210,33 @@ a:focus {
     text-transform: uppercase;
     letter-spacing: .05em;
 }
+.infoPhone {
+    white-space: nowrap;
+}
 .infoPhone:hover,
 .infoPhone:focus {
     color: #f26600;
+}
+@media (max-width: 1024px) {
+    .info {
+        flex-direction: column;
+    }
+    .infoInner:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .infoInner {
+        align-items: center;
+    }
+}
+@media (max-width: 425px) {
+    .info_footer .infoInner {
+        flex-direction: column;
+    }
+    .info_footer .infoValue:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 .social {
@@ -217,6 +285,11 @@ a:focus {
     transition: transform .2s;
     transform: scale(1);
     user-select: none;
+}
+@media (max-width: 1024px) {
+    .socialCaption {
+        display: none;
+    }
 }
 
 .menu {
@@ -270,6 +343,33 @@ a:focus {
 .menu_footer .menuSeparator {
     background-color: rgba(255, 255, 255, .3);
 }
+@media (max-width: 1024px) {
+    .menuFixed {
+        position: static !important;
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        height: auto;
+    }
+    .menu_footer {
+        display: none;
+    }
+    .menuFixed {
+        height: auto;
+    }
+    .menuInner {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+    .menuLink {
+        margin: 10px 0;
+    }
+    .menuSeparator {
+        display: none;
+    }
+}
 
 .footer {
     background-image: url(../images/footer.jpg);
@@ -296,6 +396,9 @@ a:focus {
     height: 10px;
     background-color: #f26600;
 }
+.footerCopyright {
+    margin-right: 20px;
+}
 .footerLink {
     margin-left: auto;
     color: inherit;
@@ -315,9 +418,33 @@ a:focus {
 .footerSocial {
     width: 445px;
 }
+.footerInfo {
+    padding-right: 20px;
+}
 .footerSocial {
     display: flex;
     justify-content: flex-end;
+    padding-left: 20px;
+}
+@media (max-width: 1024px) {
+    .footerTopWrapper {
+        flex-direction: column;
+    }
+    .footerLogo {
+        order: 1;
+    }
+    .footerInfo {
+        order: 2;
+        width: auto;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    .footerSocial {
+        order: 3;
+        width: auto;
+        padding-left: 0;
+        margin-top: 20px;
+    }
 }
 
 .banner {
@@ -358,12 +485,19 @@ a:focus {
 .bannerTextLine:first-child {
     margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+    .bannerTitle {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+}
 
 .slider {
     padding: 100px 0;
 }
 .sliderList {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -375,6 +509,7 @@ a:focus {
     flex-direction: column;
     text-align: center;
     width: 16.66%;
+    box-sizing: border-box;
 }
 .sliderListItem:first-child {
     padding-left: 0;
@@ -388,6 +523,7 @@ a:focus {
     max-width: 160px;
     display: block;
     user-select: none;
+    width: 100%;
 }
 .sliderText {
     font-weight: 700;
@@ -402,6 +538,25 @@ a:focus {
 .sliderListLink:hover .sliderText,
 .sliderListLink:focus .sliderText {
     color: #f26600;
+}
+@media (max-width: 1024px) {
+    .sliderList {
+        margin-top: -30px;
+    }
+    .sliderListItem {
+        width: 33.33%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .sliderListItem {
+        width: 50%;
+    }
+}
+@media (max-width: 425px) {
+    .sliderListItem {
+        width: 100%;
+    }
 }
 
 .buttonBlock {
@@ -432,13 +587,6 @@ a:focus {
     right: -387px;
 }
 .buttonBlockTitle {
-    font-size: 32px;
-    font-weight: 900;
-    letter-spacing: .05em;
-    color: #000000;
-    text-align: center;
-    margin: 0;
-    text-transform: uppercase;
     position: relative;
     z-index: 2;
 }
@@ -460,16 +608,7 @@ a:focus {
 @media (max-width: 1024px) {
     .buttonBlock::before,
     .buttonBlock::after {
-        width: 388px;
-        height: 388px;
-    }
-    .buttonBlock::before {
-        top: -194px;
-        left:-194px;
-    }
-    .buttonBlock::after {
-        bottom: -194px;
-        right: -194px;
+        display: none;
     }
 }
 @media (max-width: 768px) {
@@ -483,14 +622,6 @@ a:focus {
 
 .iconsBlock {
     padding: 100px 0;
-}
-.iconsBlockCaption {
-    font-weight: 900;
-    font-size: 32px;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
 }
 .iconsBlockList {
     margin: 50px -15px 0;
@@ -541,15 +672,13 @@ a:focus {
     background-color: #3E5ABE;
     padding: 100px 0;
     background-image: url(../images/pattern.png);
+    overflow: hidden;
 }
 .numbersBlockTitle {
-    font-size: 32px;
     color: #FFFFFF;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    display: block;
-    text-align: center;
+}
+.numbersBlockInfo {
+    overflow: hidden;
 }
 .numbersBlockList {
     display: flex;
@@ -602,7 +731,6 @@ a:focus {
     border-radius: 50%;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.5;
     flex-shrink: 0;
     user-select: none;
     margin-right: 30px;
@@ -614,6 +742,11 @@ a:focus {
     text-align: left;
     display: block;
     line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 .numbersBlockText {
     font-weight: 500;
@@ -624,18 +757,32 @@ a:focus {
     line-height: 1.5;
     margin: 10px 0 0;
 }
+@media (max-width: 1024px) {
+    .numbersBlockListItem:not(:first-child) .numbersBlockBorder::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: rgba(255, 255, 255, .3);
+    }
+    .numbersBlockBorder::before {
+        display: none !important;
+    }
+    .numbersBlockListItem {
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .numbersBlockInfo {
+        margin-top: 20px;
+    }
+    .numbersBlockBorder {
+        flex-direction: column;
+    }
+}
 
 .catalog {
     background-color: #ebedef;
     padding: 100px 0;
-}
-.catalogTitle {
-    font-weight: 900;
-    font-size: 32px;
-    letter-spacing: .05em;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
 }
 .catalogFilter {
     display: flex;
@@ -674,7 +821,7 @@ a:focus {
 }
 .catalogItemImage {
     flex-shrink: 0;
-    width: 100px;
+    height: 100px;
     display: block;
     user-select: none;
 }
@@ -722,6 +869,36 @@ a:focus {
 .catalogItemButton {
     margin-top: 20px;
 }
+@media (max-width: 768px) {
+    .catalogFilterButton {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .catalogItem {
+        width: 100%;
+    }
+    .catalogItemModelCaption {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .catalogItemInfo {
+        flex-direction: column;
+    }
+    .catalogItemModel {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .catalogItemImage {
+        width: 100px;
+        height: auto;
+    }
+}
+@media (max-width: 375px) {
+    .catalogFilterButton {
+        font-size: 10px;
+    }
+}
 
 .form {
     background-image: url(../images/form.png);
@@ -734,14 +911,6 @@ a:focus {
     background-color: #ffffff;
     padding: 100px;
     border-radius: 30px;
-}
-.formInnerCaption {
-    font-size: 32px;
-    font-weight: 900;
-    letter-spacing: .05em;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
 }
 .formFields {
     margin-top: 50px;
@@ -788,8 +957,7 @@ a:focus {
     padding: 15px;
     box-sizing: border-box;
     width: 100%;
-    outline: 0;
-    flex: 1;    
+    outline: 0;   
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -856,11 +1024,13 @@ a:focus {
     display: flex;
     margin-top: 50px;
     align-items: center;
-    justify-content: flex-end;
 }
 .formFooterText {
-    margin-right: auto;
+    margin-right: 20px;
     color: #9BA4AF;
+}
+.formFooterButton {
+    margin-left: auto;
 }
 .formIcon::after {
     content: "";
@@ -876,10 +1046,49 @@ a:focus {
     z-index: 2;  
 }
 .formIcon_calendar::after {
-    background-image: url(../images/icons/calendar.png);
+    background-image: url(../images/icons/calendar.svg);
 }
 .formIcon_arrow::after {
-    background-image: url(../images/icons/arrow.png);
+    background-image: url(../images/icons/arrow.svg);
+}
+@media (max-width: 1024px) {
+    .formInner {
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .formRow {
+        flex-direction: column;
+    }
+    .formField:not(:first-child) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .formFooter {
+        flex-direction: column;
+    }
+    .formFooterText {
+        order: 2;
+        margin-right: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .formFooterButton {
+        order: 1;
+        margin-left: 0;
+    }
+}
+@media (max-width: 425px) {
+    .formFieldInner {
+        flex-direction: column;
+    }
+    .formColumn_right,
+    .formColumn_left {
+        margin: 0;
+    }
+    .formColumn_right {
+        margin-top: 10px;
+    }
 }
 
 .infoBlock {
@@ -908,11 +1117,7 @@ a:focus {
     box-shadow: 0.4px 4px rgba(0, 0, 0, .25);
 }
 .infoBlockInnerCaption {
-    font-weight: 900;
-    font-size: 32px;
-    letter-spacing: .05em;
-    color: #000000;
-    text-transform: uppercase;
+    text-align: left;
 }
 .infoBlockInnerList {
     list-style: none;
@@ -937,7 +1142,7 @@ a:focus {
 .infoBlockInnerItemText {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0 0;
+    margin: 5px 0 0;
 }
 .infoBlockInnerItemTextValue {
     color: #000000;
@@ -945,8 +1150,6 @@ a:focus {
     font-size: 20px;
     line-height: 1.2;
     margin-right: 5px;
-}
-.infoBlockInnerItemTextValue + .infoBlockInnerItemTextValue {
     margin-top: 5px;
 }
 .infoBlockInnerItemTextValueHightlight {
@@ -954,4 +1157,19 @@ a:focus {
     font-size: 16px;
     line-height: 1.25;
     font-weight: 700;
+}
+@media (max-width: 1024px) {
+    .infoBlockInnerList {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .infoBlockInnerItem {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .infoBlockInnerItem {
+        width: 100%;
+    }
 }
