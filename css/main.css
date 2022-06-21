@@ -173,39 +173,21 @@ a:focus {
 }
 .infoInner {
     display: flex;
-    flex-direction: column;
-}
-.info_footer .infoInner {
     flex-direction: row;
 }
-.infoInner:first-child {
-    margin-right: 20px;
-}
-.info_footer .infoInner:first-child {
-    margin-right: 0;
-}
 .infoValue {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
-    min-height: 17px;
     color: #000;
 }
 .infoValue:first-child {
-    margin-bottom: 5px;
-}
-.info_footer .infoValue {
-    color: #FFF;
-    font-size: 20px;
-}
-.info_footer .infoValue:first-child {
-    margin-bottom: 0;
     margin-right: 20px;
+}
+.info_white .infoValue {
+    color: #FFF;
 }
 .infoHightlight {
     color: #9BA4AF;
-    font-size: 14px;
-}
-.info_footer .infoHightlight {
     font-size: 16px;
 }
 .infoAdress {
@@ -232,10 +214,10 @@ a:focus {
     }
 }
 @media (max-width: 425px) {
-    .info_footer .infoInner {
+    .infoInner {
         flex-direction: column;
     }
-    .info_footer .infoValue:first-child {
+    .infoValue:first-child {
         margin-right: 0;
         margin-bottom: 10px;
     }
@@ -490,6 +472,9 @@ a:focus {
 }
 .bannerTextLine:first-child {
     margin-bottom: 10px;
+}
+.bannerTextLine_bold {
+    font-weight: 700;
 }
 @media (max-width: 768px) {
     .bannerTitle {
@@ -776,6 +761,30 @@ a:focus {
     line-height: 1.5;
     margin: 10px 0 0;
 }
+.numbersBlockTextList {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    color: #FFF;
+}
+.numbersBlockTextItem {
+    position: relative;
+    padding-left: 12px;
+    line-height: 1.5;
+}
+.numbersBlockTextItem::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #FFF;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+.numbersBlockTextItem:not(:first-child) {
+    margin-top: 5px;
+}
 @media (max-width: 1024px) {
     .numbersBlockListItem:not(:first-child) .numbersBlockBorder::after {
         content: "";
@@ -843,6 +852,10 @@ a:focus {
     border-radius: 30px;
     padding: 30px;
     transition: background .4s;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .catalogItem_selected .catalogItemInner {
     background-color: #FFF;
@@ -895,11 +908,13 @@ a:focus {
 }
 .catalogItemText {
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 1.5;
 }
 .catalogItemButton {
-    margin-top: 20px;
+    margin-top: auto;
+    align-self: flex-start;
 }
 @media (max-width: 768px) {
     .catalog {
@@ -1273,7 +1288,7 @@ a:focus {
     width: calc(100% + 30px);
 }
 .infoBlockInnerItem {
-    width: 25%;
+    width: 33.33%;
     padding: 0 15px;
     box-sizing: border-box;
 }
@@ -1310,15 +1325,12 @@ a:focus {
         margin-top: 0;
     }
     .infoBlockInnerItem {
-        width: 50%;
+        width: 100%;
         margin-top: 30px;
     }
 }
 @media (max-width: 768px) {
     .infoBlock {
         padding-top: 250px;
-    }
-    .infoBlockInnerItem {
-        width: 100%;
     }
 }
