@@ -1,7 +1,7 @@
 html {
     font: 500 14px/1 'Montserrat', serif;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #FFF;
+    color: #000;
 }
 html,
 body {
@@ -15,7 +15,7 @@ a {
 }
 a:hover,
 a:focus {
-    color: #f26600;
+    color: #F26600;
 }
 
 .container {
@@ -31,11 +31,12 @@ a:focus {
 }
 
 .button {
-    display: flex;
+    display: inline-flex;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    background-color: #f26600;
-    color: #FFFFFF;
+    background-color: #F26600;
+    color: #FFF;
     border: 0;
     height: 40px;
     padding: 10px 30px;
@@ -57,12 +58,12 @@ a:focus {
     font-size: 14px;
 }
 .button_style_white {
-    background-color: #ffffff;
+    background-color: #FFF;
     color: #3E5ABE;
 }
 .button_active {
     background-color: #9BA4AF !important;
-    color: #FFFFFF !important;
+    color: #FFF !important;
 }
 .button_noShadow,
 .button_hoverShadow {
@@ -71,6 +72,7 @@ a:focus {
 .button:hover,
 .button:focus {
     background-color: #3E5ABE;
+    color: #FFF;
 }
 .button_hoverShadow:hover,
 .button_hoverShadow:focus {
@@ -81,8 +83,8 @@ a:focus {
 }
 .button_style_white:hover,
 .button_style_white:focus {
-    color: #f26600;
-    background-color: #ffffff;
+    color: #F26600;
+    background-color: #FFF;
 }
 
 .subtitle {
@@ -107,7 +109,7 @@ a:focus {
 
 .header {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     padding-top: 8px;
 }
 .header::before {
@@ -118,7 +120,7 @@ a:focus {
     left: 0;
     width: 100%;
     height: 8px;
-    background-color: #f26600;
+    background-color: #F26600;
 }
 .headerWrapper {
     display: flex;
@@ -127,7 +129,7 @@ a:focus {
     align-items: center;
     justify-content: space-between;
 }
-.headerInfo, 
+.headerInfo,
 .headerSocial {
     width: 445px;
 }
@@ -186,13 +188,13 @@ a:focus {
     font-size: 14px;
     font-weight: 700;
     min-height: 17px;
-    color: #000000;
+    color: #000;
 }
 .infoValue:first-child {
     margin-bottom: 5px;
 }
 .info_footer .infoValue {
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 20px;
 }
 .info_footer .infoValue:first-child {
@@ -215,7 +217,7 @@ a:focus {
 }
 .infoPhone:hover,
 .infoPhone:focus {
-    color: #f26600;
+    color: #F26600;
 }
 @media (max-width: 1024px) {
     .info {
@@ -301,7 +303,7 @@ a:focus {
 }
 .menuFixed {
     height: 50px;
-    background-color: #ebedef;
+    background-color: #EBEDEF;
 }
 .menu_fixed .menuFixed {
     position: fixed;
@@ -309,6 +311,7 @@ a:focus {
     left: 0;
     z-index: 99;
     width: 100%;
+    box-shadow: 0 8px 8px rgb(0 0 0 / 8%);
 }
 .menuInner {
     height: 50px;
@@ -322,20 +325,20 @@ a:focus {
     font-size: 14px;
     letter-spacing: .05em;
     text-transform: uppercase;
-    color: #000000;
+    color: #000;
     flex-shrink: 0;
     user-select: none;
 }
 .menu .menuLink:hover,
 .menu .menuLink:focus {
-    color: #f26600;
+    color: #F26600;
 }
 .menu_footer .menuLink {
-    color: #FFFFFF;
+    color: #FFF;
 }
 .menuSeparator {
     height: 2px;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     display: block;
     flex-basis: 100%;
     margin: 0 10px;
@@ -380,7 +383,7 @@ a:focus {
     padding-top: 100px;
 }
 .footerBottom {
-    color: #FFFFFF;
+    color: #FFF;
     padding-top: 60px;
     padding-bottom: 50px;
     position: relative;
@@ -394,7 +397,7 @@ a:focus {
     left: 0;
     width: 100%;
     height: 10px;
-    background-color: #f26600;
+    background-color: #F26600;
 }
 .footerCopyright {
     margin-right: 20px;
@@ -414,7 +417,7 @@ a:focus {
     align-items: center;
     justify-content: space-between;
 }
-.footerInfo, 
+.footerInfo,
 .footerSocial {
     width: 445px;
 }
@@ -464,14 +467,14 @@ a:focus {
     font-weight: 900;
     font-size: 48px;
     letter-spacing: .05em;
-    color: #FFFFFF;
+    color: #FFF;
     text-align: center;
     text-transform: uppercase;
     max-width: 824px;
     margin: 0;
 }
 .bannerText {
-    color:#FFFFFF;
+    color:#FFF;
     max-width: 540px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -537,7 +540,7 @@ a:focus {
 }
 .sliderListLink:hover .sliderText,
 .sliderListLink:focus .sliderText {
-    color: #f26600;
+    color: #F26600;
 }
 @media (max-width: 1024px) {
     .sliderList {
@@ -560,7 +563,7 @@ a:focus {
 }
 
 .buttonBlock {
-    background-color: #ebedef;
+    background-color: #EBEDEF;
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -604,6 +607,9 @@ a:focus {
 .buttonBlockListItem {
     padding: 5px;
     box-sizing: border-box;
+}
+.buttonBlockListItemButton {
+    border: 1px solid #EBEDEF;
 }
 @media (max-width: 1024px) {
     .buttonBlock::before,
@@ -675,7 +681,7 @@ a:focus {
     overflow: hidden;
 }
 .numbersBlockTitle {
-    color: #FFFFFF;
+    color: #FFF;
 }
 .numbersBlockInfo {
     overflow: hidden;
@@ -721,10 +727,10 @@ a:focus {
 }
 .numbersBlockNumber::after {
     content: counter(number);
-    color: #FFFFFF;
+    color: #FFF;
     height: 70px;
     width: 70px;
-    background-color: #f26600;
+    background-color: #F26600;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -738,7 +744,7 @@ a:focus {
 .numbersBlockCaption {
     font-weight: 700;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #FFF;
     text-align: left;
     display: block;
     line-height: 1.5;
@@ -751,7 +757,7 @@ a:focus {
 .numbersBlockText {
     font-weight: 500;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #FFF;
     text-align: left;
     display: block;
     line-height: 1.5;
@@ -781,7 +787,7 @@ a:focus {
 }
 
 .catalog {
-    background-color: #ebedef;
+    background-color: #EBEDEF;
     padding: 100px 0;
 }
 .catalogFilter {
@@ -790,7 +796,7 @@ a:focus {
     margin-top: 20px;
 }
 .catalogFilterInner {
-    background-color: #FFFFFF;
+    background-color: #FFF;
     border-radius: 10px;
     display: flex;
 }
@@ -808,13 +814,13 @@ a:focus {
     box-sizing: border-box;
 }
 .catalogItemInner {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #FFF;
     border-radius: 30px;
     padding: 30px;
     transition: background .4s;
 }
 .catalogItem_selected .catalogItemInner {
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 .catalogItemInfo {
     display: flex;
@@ -834,6 +840,7 @@ a:focus {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 .catalogItemModelCars {
     margin-top: auto;
@@ -877,9 +884,6 @@ a:focus {
     .catalogItem {
         width: 100%;
     }
-    .catalogItemModelCaption {
-        margin-bottom: 20px;
-    }
 }
 @media (max-width: 425px) {
     .catalogItemInfo {
@@ -908,9 +912,11 @@ a:focus {
     padding: 100px 0;
 }
 .formInner {
-    background-color: #ffffff;
+    position: relative;
+    background-color: #FFF;
     padding: 100px;
     border-radius: 30px;
+    overflow: hidden;
 }
 .formFields {
     margin-top: 50px;
@@ -933,6 +939,7 @@ a:focus {
     letter-spacing: .05em;
     text-transform: uppercase;
     color: #9BA4AF;
+    cursor: pointer;
 }
 .formFieldInner {
     margin-top: 10px;
@@ -949,7 +956,7 @@ a:focus {
     position: relative;
     cursor: pointer;
 }
-.formInput, 
+.formInput,
 .formTextarea {
     border: 0;
     background-color: #EBEDEF;
@@ -957,18 +964,84 @@ a:focus {
     padding: 15px;
     box-sizing: border-box;
     width: 100%;
-    outline: 0;   
+    outline: 0;
     position: relative;
     cursor: pointer;
     user-select: none;
+    border: 1px solid #EBEDEF;
+    transition: border .4s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.formInput:invalid,
+.formTextarea:invalid {
+    border-color: #F26600;
+}
+.formInput:hover,
+.formInput:focus,
+.formTextarea:hover,
+.formTextarea:focus {
+    border-color: #3E5ABE;
 }
 .formInput {
+    position: relative;
     display: flex;
     align-items: center;
     height: 50px;
 }
 .formInput_withIcon {
     padding-right: 50px;
+}
+.formInputHidden {
+    display: none;
+}
+.formInputValue {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 50px;
+    border: 1px solid transparent;
+}
+.formInput .qs-datepicker-container {
+    top: -1px !important;
+    left: -1px !important;
+    width: calc(100% + 2px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #3E5ABE;
+}
+.formInput .qs-datepicker-container .qs-controls {
+    background-color: #EBEDEF;
+    min-height: 50px;
+}
+.formInput .qs-datepicker-container .qs-arrow.qs-left {
+    left: 10px;
+}
+.formInput .qs-datepicker-container .qs-arrow.qs-right {
+    right: 10px;
+}
+.formInput .qs-datepicker-container .qs-square {
+    height: 1.7em;
+    transition: all .2s;
+}
+.formInput .qs-datepicker-container .qs-active {
+    background-color: #3E5ABE;
+    color: #FFF;
+}
+.formInput .qs-datepicker-container .qs-current {
+    text-decoration: none;
+}
+.formInput .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+    background-color: #F26600;
+    color: #FFF;
 }
 .formTextarea {
     height: 100px;
@@ -991,12 +1064,15 @@ a:focus {
 }
 .formSelectValues {
     display: none;
+    box-sizing: border-box;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
     z-index: 1;
-    box-shadow: 0 10px 10px rgba(0 , 0, 0, .1);
+    border: 1px solid #3E5ABE;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .formSelect_active .formSelectValues {
     display: block;
@@ -1011,8 +1087,17 @@ a:focus {
     display: flex;
     align-items: center;
     height: 50px;
+    transition: color .4s;
+}
+.formSelectValue_selected {
+    color: #3E5ABE;
+}
+.formSelectValue:hover,
+.formSelectValue:focus {
+    color: #F26600;
 }
 .formSelectValue:first-child {
+    margin-top: -1px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -1032,6 +1117,36 @@ a:focus {
 .formFooterButton {
     margin-left: auto;
 }
+.formModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+.form_sended .formModal {
+    opacity: 1;
+    visibility: visible;
+}
+.formModalTitle {
+    color: #3E5ABE;
+    text-align: center;
+}
+.formModalText {
+    margin: 20px 0 0;
+    text-align: center;
+}
 .formIcon::after {
     content: "";
     display: block;
@@ -1042,8 +1157,8 @@ a:focus {
     height: 20px;
     margin-top: -10px;
     background-position: 50%;
-    background-repeat: no-repeat; 
-    z-index: 2;  
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 .formIcon_calendar::after {
     background-image: url(../images/icons/calendar.svg);
@@ -1102,7 +1217,7 @@ a:focus {
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: #eee;
+    background-color: #EEE;
 }
 .infoBlockMap > ymaps {
     width: 100% !important;
@@ -1111,7 +1226,7 @@ a:focus {
 .infoBlockInner {
     position: relative;
     z-index: 2;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0.4px 4px rgba(0, 0, 0, .25);
@@ -1145,7 +1260,7 @@ a:focus {
     margin: 5px 0 0;
 }
 .infoBlockInnerItemTextValue {
-    color: #000000;
+    color: #000;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
