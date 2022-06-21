@@ -430,6 +430,9 @@ a:focus {
     padding-left: 20px;
 }
 @media (max-width: 1024px) {
+    .footer {
+        padding-top: 50px;
+    }
     .footerTopWrapper {
         flex-direction: column;
     }
@@ -552,6 +555,9 @@ a:focus {
     }
 }
 @media (max-width: 768px) {
+    .slider {
+        padding: 50px 0;
+    }
     .sliderListItem {
         width: 50%;
     }
@@ -618,11 +624,15 @@ a:focus {
     }
 }
 @media (max-width: 768px) {
+    .buttonBlock {
+        padding: 50px 0;
+    }
     .buttonBlockListItem {
         width: 100%;
     }
     .buttonBlockListItemButton {
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -669,6 +679,9 @@ a:focus {
     }
 }
 @media (max-width: 768px) {
+    .iconsBlock {
+        padding: 50px 0;
+    }
     .iconsBlockListItem {
         width: 100%;
     }
@@ -777,6 +790,18 @@ a:focus {
         width: 100%;
     }
 }
+@media (max-width: 768px) {
+    .numbersBlock {
+        padding: 50px 0;
+    }
+    .numbersBlockList {
+        margin-top: 0;
+    }
+    .numbersBlockBorder {
+        padding: 15px;
+        height: calc(100% - 30px);
+    }
+}
 @media (max-width: 425px) {
     .numbersBlockInfo {
         margin-top: 20px;
@@ -877,6 +902,9 @@ a:focus {
     margin-top: 20px;
 }
 @media (max-width: 768px) {
+    .catalog {
+        padding: 50px 0;
+    }
     .catalogFilterButton {
         padding-left: 10px;
         padding-right: 10px;
@@ -1172,6 +1200,9 @@ a:focus {
     }
 }
 @media (max-width: 768px) {
+    .form {
+        padding: 50px 0;
+    }
     .formRow {
         flex-direction: column;
     }
@@ -1284,6 +1315,9 @@ a:focus {
     }
 }
 @media (max-width: 768px) {
+    .infoBlock {
+        padding-top: 250px;
+    }
     .infoBlockInnerItem {
         width: 100%;
     }
