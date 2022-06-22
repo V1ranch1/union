@@ -9,11 +9,11 @@
     <meta name="keywords" content="Keywords">
     <meta name="description" content="Description">
     <title>Юнион Вариаторы<?= $title ? ' | ' . $title : ''; ?></title>
-    <link rel="icon" href="./favicon.ico">
-    <link rel="apple-touch-icon" href="./favicon.png">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/datepicker.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/datepicker.min.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
@@ -31,8 +31,8 @@
                     </div>
                 </div>
 
-                <a class="headerLogo" href="https://unionvariators.ru/">
-                    <img class="logo" src="./images/logo.svg" alt="Юнион Вариаторы">
+                <a class="headerLogo" href="/">
+                    <img class="logo" src="/images/logo.svg" alt="Юнион Вариаторы">
                 </a>
 
                 <div class="headerSocial social">
@@ -40,22 +40,22 @@
                     <ul class="socialList">
                         <li class="socialListItem">
                             <a class="socialLink" href="#">
-                                <img class="socialIcon" src="./images/social/vk.svg" alt="Юнион Вариаторы Вконтакте">
+                                <img class="socialIcon" src="/images/social/vk.svg" alt="Юнион Вариаторы Вконтакте">
                             </a>
                         </li>
                         <li class="socialListItem">
                             <a class="socialLink" href="#">
-                                <img class="socialIcon" src="./images/social/ig.svg" alt="Юнион Вариаторы Инстаграм">
+                                <img class="socialIcon" src="/images/social/ig.svg" alt="Юнион Вариаторы Инстаграм">
                             </a>
                         </li>
                         <li class="socialListItem">
                             <a class="socialLink" href="#">
-                                <img class="socialIcon" src="./images/social/fb.svg" alt="Юнион Вариаторы Фейсбук">
+                                <img class="socialIcon" src="/images/social/fb.svg" alt="Юнион Вариаторы Фейсбук">
                             </a>
                         </li>
                         <li class="socialListItem">
                             <a class="socialLink" href="#">
-                                <img class="socialIcon" src="./images/social/tw.svg" alt="Юнион Вариаторы Твиттер">
+                                <img class="socialIcon" src="/images/social/tw.svg" alt="Юнион Вариаторы Твиттер">
                             </a>
                         </li>
                     </ul>
@@ -118,8 +118,8 @@
                         </div>
                     </div>
 
-                    <a class="footerLogo" href="https://unionvariators.ru/">
-                        <img class="logo" src="./images/logowhite.svg" alt="Юнион Вариаторы">
+                    <a class="footerLogo" href="/">
+                        <img class="logo" src="/images/logowhite.svg" alt="Юнион Вариаторы">
                     </a>
 
                     <div class="footerSocial social">
@@ -127,22 +127,22 @@
                         <ul class="socialList">
                             <li class="socialListItem">
                                 <a class="socialLink" href="#">
-                                    <img class="socialIcon" src="./images/social/vk.svg" alt="Юнион Вариаторы Вконтакте">
+                                    <img class="socialIcon" src="/images/social/vk.svg" alt="Юнион Вариаторы Вконтакте">
                                 </a>
                             </li>
                             <li class="socialListItem">
                                 <a class="socialLink" href="#">
-                                    <img class="socialIcon" src="./images/social/ig.svg" alt="Юнион Вариаторы Инстаграм">
+                                    <img class="socialIcon" src="/images/social/ig.svg" alt="Юнион Вариаторы Инстаграм">
                                 </a>
                             </li>
                             <li class="socialListItem">
                                 <a class="socialLink" href="#">
-                                    <img class="socialIcon" src="./images/social/fb.svg" alt="Юнион Вариаторы Фейсбук">
+                                    <img class="socialIcon" src="/images/social/fb.svg" alt="Юнион Вариаторы Фейсбук">
                                 </a>
                             </li>
                             <li class="socialListItem">
                                 <a class="socialLink" href="#">
-                                    <img class="socialIcon" src="./images/social/tw.svg" alt="Юнион Вариаторы Твиттер">
+                                    <img class="socialIcon" src="/images/social/tw.svg" alt="Юнион Вариаторы Твиттер">
                                 </a>
                             </li>
                         </ul>
@@ -162,8 +162,8 @@
 
     </div>
 
-    <script src="./js/datepicker.min.js"></script>
-    <script src="./js/inputmask.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="/js/datepicker.min.js"></script>
+    <script src="/js/mask.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

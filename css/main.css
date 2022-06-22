@@ -407,7 +407,7 @@ a:focus {
 }
 
 .footer {
-    background-image: url(../images/footer.jpg);
+    background-image: url(/images/footer.jpg);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -489,7 +489,7 @@ a:focus {
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/banner.jpg);
+    background-image: url(/images/banner.jpg);
 }
 .bannerWrapper {
     display: flex;
@@ -615,7 +615,7 @@ a:focus {
     display: block;
     width: 774px;
     height: 773px;
-    background-image: url(../images/screw.svg);
+    background-image: url(/images/screw.svg);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -725,7 +725,7 @@ a:focus {
 .numbersBlock {
     background-color: #3E5ABE;
     padding: 100px 0;
-    background-image: url(../images/pattern.png);
+    background-image: url(/images/pattern.png);
     overflow: hidden;
 }
 .numbersBlockTitle {
@@ -998,7 +998,7 @@ a:focus {
 }
 
 .form {
-    background-image: url(../images/form.png);
+    background-image: url(/images/form.png);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1254,10 +1254,10 @@ a:focus {
     z-index: 2;
 }
 .formIcon_calendar::after {
-    background-image: url(../images/icons/calendar.svg);
+    background-image: url(/images/icons/calendar.svg);
 }
 .formIcon_arrow::after {
-    background-image: url(../images/icons/arrow.svg);
+    background-image: url(/images/icons/arrow.svg);
 }
 @media (max-width: 1024px) {
     .formInner {

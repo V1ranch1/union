@@ -86,7 +86,12 @@ document.querySelectorAll('.catalogFilterButton').forEach((button) => {
     });
 });
 
-Inputmask().mask(document.querySelectorAll('[data-inputmask]'));
+document.querySelectorAll('[data-mask]').forEach((mask) => {
+    IMask(mask, {
+        mask: mask.dataset.mask,
+        lazy: false,
+    });
+});
 
 const formSended = 'form_sended';
 function sendOrderForm(form) {

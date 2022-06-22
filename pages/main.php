@@ -384,7 +384,7 @@
                     <div class="formField">
                         <label class="formLabel" for="phone">Телефон</label>
                         <div class="formFieldInner">
-                            <input class="formInput" type="text" name="phone" id="phone" data-inputmask="'mask': '+7 (999) 999-99-99'" required pattern="^\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}$" data-validity="Укажите телефон">
+                            <input class="formInput" type="text" name="phone" id="phone" data-mask="+7 (000) 000-00-00" required pattern="^\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}$" data-validity="Укажите телефон">
                         </div>
                     </div>
                     <div class="formField">
