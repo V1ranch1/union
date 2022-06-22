@@ -448,7 +448,7 @@
                             </div>
                             <div class="formColumn formColumn_right formSelect">
                                 <div class="formInput formInput_withIcon formIcon formIcon_arrow formSelectIcon">
-                                    <span class="formSelectActive">18:00</span>
+                                    <span class="formSelectActive">10:00-12:00</span>
                                     <div class="formSelectValues">
                                         <div class="formSelectValue formSelectValue_selected">10:00-12:00</div>
                                         <div class="formSelectValue">12:00-14:00</div>

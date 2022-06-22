@@ -982,6 +982,9 @@ a:focus {
     .catalogItem {
         width: 100%;
     }
+    .catalogItemButton {
+        width: 100%;
+    }
 }
 @media (max-width: 425px) {
     .catalogItemInfo {
@@ -1410,4 +1413,3 @@ a:focus {
 .error404Text {
     margin: 20px 0 0;
 }
-
