@@ -41,6 +41,11 @@ a:focus {
 .text h5,
 .text h6 {
     margin-top: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 .text p {
     margin: 0;
