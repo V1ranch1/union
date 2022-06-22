@@ -338,6 +338,10 @@ a:focus {
     background-color: transparent;
     margin-bottom: 50px;
 }
+.menuStub {
+    height: 10px;
+    background-color: #EBEDEF;
+}
 .menuFixed {
     height: 50px;
     background-color: #EBEDEF;
@@ -417,6 +421,9 @@ a:focus {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: auto;
+    padding-top: 50px;
+}
+.footer_main {
     padding-top: 100px;
 }
 .footerBottom {

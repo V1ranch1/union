@@ -46,13 +46,15 @@ document.querySelectorAll('.formSelect').forEach((item) => {
 
 const menu = document.querySelector('.menu');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 198) {
-        menu.classList.add('menu_fixed');
-    } else {
-        menu.classList.remove('menu_fixed');
-    }
-});
+if (menu) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 198) {
+            menu.classList.add('menu_fixed');
+        } else {
+            menu.classList.remove('menu_fixed');
+        }
+    });
+}
 
 document.querySelectorAll('.scrollTo').forEach((link) => {
     link.addEventListener('click', (e) => {

@@ -61,51 +61,57 @@
 
             </div>
 
-            <div class="menu">
-                <div class="menuFixed">
-                    <div class="wrapper">
-                        <menu class="menuInner">
-                            <a class="menuLink scrollTo" href="#models">Модели вариаторов</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#services">Услуги</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#benefits">Преимущества</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#catalog">Каталог</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#order">Заявка</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#contacts">Контакты</a>
-                        </menu>
+            <?php if ($page == 'main') { ?>
+                <div class="menu">
+                    <div class="menuFixed">
+                        <div class="wrapper">
+                            <menu class="menuInner">
+                                <a class="menuLink scrollTo" href="#models">Модели вариаторов</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#services">Услуги</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#benefits">Преимущества</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#catalog">Каталог</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#order">Заявка</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#contacts">Контакты</a>
+                            </menu>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php } else { ?>
+                <div class="menuStub"></div>
+            <?php } ?>
 
         </header>
 
         <?= $content; ?>
 
-        <footer class="footer">
+        <footer class="footer<?= $page == 'main' ? ' footer_main' : ''; ?>">
 
             <div class="footerTop">
 
-                <div class="menu menu_footer">
-                    <div class="wrapper">
-                        <menu class="menuInner">
-                            <a class="menuLink scrollTo" href="#models">Модели вариаторов</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#services">Услуги</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#benefits">Преимущества</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#catalog">Каталог</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#order">Заявка</a>
-                            <span class="menuSeparator"></span>
-                            <a class="menuLink scrollTo" href="#contacts">Контакты</a>
-                        </menu>
+                <?php if ($page == 'main') { ?>
+                    <div class="menu menu_footer">
+                        <div class="wrapper">
+                            <menu class="menuInner">
+                                <a class="menuLink scrollTo" href="#models">Модели вариаторов</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#services">Услуги</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#benefits">Преимущества</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#catalog">Каталог</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#order">Заявка</a>
+                                <span class="menuSeparator"></span>
+                                <a class="menuLink scrollTo" href="#contacts">Контакты</a>
+                            </menu>
+                        </div>
                     </div>
-                </div>
+                <?php } ?>
 
                 <div class="wrapper footerTopWrapper">
 
