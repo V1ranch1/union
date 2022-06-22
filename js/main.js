@@ -121,3 +121,8 @@ document.querySelectorAll('.form [data-validity]').forEach((input) => {
     input.setCustomValidity(input.dataset.validity);
   });
 });
+
+function setComment(e) {
+    const comment = e.parentElement.querySelector('.catalogItemModelCaption');
+    document.getElementById('comment').value = `Модель вариатора: ${comment.innerHTML}`;
+}

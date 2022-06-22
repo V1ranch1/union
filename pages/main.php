@@ -197,7 +197,7 @@
                         Nissan Teana (2008-2013)<br>
                         Nissan Murano (2008-2014)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="nissan">
@@ -220,7 +220,7 @@
                         Nissan Qashqai (2006-2015)<br>
                         Nissan Juke (2011-2016)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="nissan mitsubishi">
@@ -244,7 +244,7 @@
                         Nissan Qashqai (2012-2014)<br>
                         Mitsubishi Lancer (2013-2014)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="nissan">
@@ -266,7 +266,7 @@
                         Nissan Teana (2014-2017)<br>
                         Nissan X-Trail (2014-2017)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="nissan">
@@ -288,7 +288,7 @@
                         Nissan Pathfinder (2012-2017)<br>
                         Nissan X-Trail (2014-2017)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="nissan">
@@ -308,7 +308,7 @@
                     <p class="catalogItemText">
                         Nissan Primera (1999-2008)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="mitsubishi peugeot citroen">
@@ -336,7 +336,7 @@
                         Citroen C-Crosser (2007-2012)<br>
                         Citroen C4 Aircross (2012-2016)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="renault">
@@ -360,7 +360,7 @@
                         Renault Megane (2007-2016)<br>
                         Renault Scenic (2007-2016)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="mitsubishi">
@@ -380,7 +380,7 @@
                     <p class="catalogItemText">
                         Mitsubishi Lancer (2013-2016)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
             <li class="catalogItem" data-filter="mitsubishi">
@@ -400,7 +400,7 @@
                     <p class="catalogItemText">
                         Mitsubishi Outlander (2014-2017)
                     </p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                    <a class="button catalogItemButton scrollTo" href="#order" onclick="setComment(this);">Оставить заявку</a>
                 </div>
             </li>
         </ul>
