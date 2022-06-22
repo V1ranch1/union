@@ -1,0 +1,14 @@
+#!/bin/bash
+source ./bin/.config
+rsync -zavP $LOCAL/css --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/images --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/js --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/order --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/pages --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/templates --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/.htaccess --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/favicon.ico --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/favicon.png --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/index.php --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/robots.txt --exclude-from=./bin/.exclude $REMOTE --delete
+rsync -zavP $LOCAL/sitemap.xml --exclude-from=./bin/.exclude $REMOTE --delete

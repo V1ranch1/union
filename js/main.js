@@ -90,14 +90,22 @@ Inputmask().mask(document.querySelectorAll('[data-inputmask]'));
 
 const formSended = 'form_sended';
 function sendOrderForm(form) {
-    form.classList.add(formSended);
-    const inputs = form.querySelectorAll('input, textarea');
-    inputs.forEach((input) => {
-        input.value = '';
-    });
-    setTimeout(() => {
-        form.classList.remove(formSended);
-    }, 3000);
+    const data = new FormData(form);
+    fetch('/order/', {
+        method: 'post',
+        body: data,
+    })
+        .then((response) => (response.json()))
+        .then((data) => {
+            form.classList.add(formSended);
+            const inputs = form.querySelectorAll('input, textarea');
+            inputs.forEach((input) => {
+                input.value = '';
+            });
+            setTimeout(() => {
+                form.classList.remove(formSended);
+            }, 3000);
+        });
     return false;
 }
 document.querySelectorAll('.form [data-validity]').forEach((input) => {
