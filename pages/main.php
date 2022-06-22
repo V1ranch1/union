@@ -450,17 +450,19 @@
                                 <div class="formInput formInput_withIcon formIcon formIcon_arrow formSelectIcon">
                                     <span class="formSelectActive">18:00</span>
                                     <div class="formSelectValues">
-                                        <div class="formSelectValue formSelectValue_selected">18:00</div>
-                                        <div class="formSelectValue">19:00</div>
-                                        <div class="formSelectValue">20:00</div>
-                                        <div class="formSelectValue">21:00</div>
+                                        <div class="formSelectValue formSelectValue_selected">10:00-12:00</div>
+                                        <div class="formSelectValue">12:00-14:00</div>
+                                        <div class="formSelectValue">14:00-16:00</div>
+                                        <div class="formSelectValue">16:00-18:00</div>
+                                        <div class="formSelectValue">18:00-20:00</div>
                                     </div>
                                 </div>
                                 <select name="time" class="formSelectHidden">
-                                    <option value="18:00" selected>18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
+                                    <option value="10:00-12:00" selected>10:00-12:00</option>
+                                    <option value="12:00-14:00">12:00-14:00</option>
+                                    <option value="14:00-16:00">14:00-16:00</option>
+                                    <option value="16:00-18:00">16:00-18:00</option>
+                                    <option value="18:00-20:00">18:00-20:00</option>
                                 </select>
                             </div>
                         </div>
@@ -516,7 +518,7 @@
                     <li class="infoBlockInnerItem">
                         <span class="infoBlockInnerItemCaption">Наш адрес</span>
                         <div class="infoBlockInnerItemText">
-                            <span class="infoBlockInnerItemTextValue">2-й&nbsp;Сельскохозяйственный проезд, дом 6</span>
+                            <span class="infoBlockInnerItemTextValue">2-й Сельскохозяйственный проезд, дом 6</span>
                         </div>
                     </li>
                 </ul>
