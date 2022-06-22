@@ -193,7 +193,10 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Nissan Teana (2008-2013)<br>
+                        Nissan Murano (2008-2014)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
@@ -211,7 +214,12 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Nissan Teana (2008-2015)<br>
+                        Nissan X-Trail (2007-2015)<br>
+                        Nissan Qashqai (2006-2015)<br>
+                        Nissan Juke (2011-2016)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
@@ -230,7 +238,12 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Nissan Juke (2011-2016)<br>
+                        Nissan Tiida (2014-2016)<br>
+                        Nissan Qashqai (2012-2014)<br>
+                        Mitsubishi Lancer (2013-2014)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
@@ -248,7 +261,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Nissan Qashqai (2013-2017)<br>
+                        Nissan Teana (2014-2017)<br>
+                        Nissan X-Trail (2014-2017)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
@@ -266,7 +283,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Nissan Murano (2014-2017)<br>
+                        Nissan Pathfinder (2012-2017)<br>
+                        Nissan X-Trail (2014-2017)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
@@ -284,7 +305,9 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Nissan Primera (1999-2008)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
@@ -304,43 +327,15 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
-                </div>
-            </li>
-            <li class="catalogItem" data-filter="mitsubishi">
-                <div class="catalogItemInner">
-                    <div class="catalogItemInfo">
-                        <img class="catalogItemImage" src="./images/variators/W1CJC(F1CJC).png" alt="W1CJC(F1CJC)">
-                        <div class="catalogItemModel">
-                            <span class="catalogItemModelCaption">W1CJC (F1CJC)</span>
-                            <div class="catalogItemModelCars">
-                                <span class="catalogItemModelCarsCaption">Подходит для</span>
-                                <ul class="catalogItemModelCarsList">
-                                    <li class="catalogItemModelCarsItem">Mitsubishi</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
-                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
-                </div>
-            </li>
-            <li class="catalogItem" data-filter="mitsubishi">
-                <div class="catalogItemInner">
-                    <div class="catalogItemInfo">
-                        <img class="catalogItemImage" src="./images/variators/F1CJB.png" alt="F1CJB">
-                        <div class="catalogItemModel">
-                            <span class="catalogItemModelCaption">F1CJB</span>
-                            <div class="catalogItemModelCars">
-                                <span class="catalogItemModelCarsCaption">Подходит для</span>
-                                <ul class="catalogItemModelCarsList">
-                                    <li class="catalogItemModelCarsItem">Mitsubishi</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Mitsubishi Outlander (2009-2014)<br>
+                        Mitsubishi ASX (2010-2017)<br>
+                        Mitsubishi Lancer (2007-2014)<br>
+                        Peugeot 4007 (2007-2014)<br>
+                        Peugeot 4008 (2012-2016)<br>
+                        Citroen C-Crosser (2007-2012)<br>
+                        Citroen C4 Aircross (2012-2016)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
@@ -358,7 +353,53 @@
                             </div>
                         </div>
                     </div>
-                    <p class="catalogItemText">Детальное описание вариатора.</p>
+                    <p class="catalogItemText">
+                        Renault Fluence (2010-2017)<br>
+                        Renault Koleos (2008-2016)<br>
+                        Renault Latitude (2011-2016)<br>
+                        Renault Megane (2007-2016)<br>
+                        Renault Scenic (2007-2016)
+                    </p>
+                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                </div>
+            </li>
+            <li class="catalogItem" data-filter="mitsubishi">
+                <div class="catalogItemInner">
+                    <div class="catalogItemInfo">
+                        <img class="catalogItemImage" src="./images/variators/F1CJB.png" alt="F1CJB">
+                        <div class="catalogItemModel">
+                            <span class="catalogItemModelCaption">F1CJB</span>
+                            <div class="catalogItemModelCars">
+                                <span class="catalogItemModelCarsCaption">Подходит для</span>
+                                <ul class="catalogItemModelCarsList">
+                                    <li class="catalogItemModelCarsItem">Mitsubishi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="catalogItemText">
+                        Mitsubishi Lancer (2013-2016)
+                    </p>
+                    <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
+                </div>
+            </li>
+            <li class="catalogItem" data-filter="mitsubishi">
+                <div class="catalogItemInner">
+                    <div class="catalogItemInfo">
+                        <img class="catalogItemImage" src="./images/variators/W1CJC(F1CJC).png" alt="W1CJC(F1CJC)">
+                        <div class="catalogItemModel">
+                            <span class="catalogItemModelCaption">W1CJC (F1CJC)</span>
+                            <div class="catalogItemModelCars">
+                                <span class="catalogItemModelCarsCaption">Подходит для</span>
+                                <ul class="catalogItemModelCarsList">
+                                    <li class="catalogItemModelCarsItem">Mitsubishi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="catalogItemText">
+                        Mitsubishi Outlander (2014-2017)
+                    </p>
                     <a class="button catalogItemButton scrollTo" href="#order">Оставить заявку</a>
                 </div>
             </li>
