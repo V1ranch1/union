@@ -30,6 +30,56 @@ a:focus {
     box-sizing: border-box;
 }
 
+.text {
+    padding: 50px 0;
+    line-height: 1.2;
+}
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+    margin-top: 0;
+}
+.text p {
+    margin: 0;
+}
+.text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.text ul,
+.text ol {
+    margin: 0;
+    padding-left: 20px;
+}
+.text ul:not(:last-child),
+.text ol:not(:last-child) {
+    margin-bottom: 20px;
+}
+.text ul li:not(:last-child),
+.text ol li:not(:last-child) {
+    margin-bottom: 4px;
+}
+.text ul {
+    list-style: square;
+    color: #3E5ABE;
+}
+.text p + ul {
+    margin-top: -10px;
+}
+.text ul li em,
+.text ul li strong,
+.text ol li em,
+.text ol li strong {
+    font-style: normal;
+    color: #000;
+}
+.text img {
+    max-width: 100%;
+    height: auto !important;
+}
+
 .button {
     display: inline-flex;
     box-sizing: border-box;

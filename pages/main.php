@@ -1,6 +1,6 @@
 <section class="banner">
     <div class="wrapper bannerWrapper">
-        <h1 class="bannerTitle">Ремонт вариаторов ЮНИОН</h1>
+        <h1 class="bannerTitle">Ремонт вариаторов JATCO</h1>
         <p class="bannerText">
             <span class="bannerTextLine">На автомобилях Nissan, Mitsubishi, Renault, Infinity.</span>
             <span class="bannerTextLine">Профессиональный ремонт вариаторов от компании ЮНИОН с гарантией за 72 часа!</span>
@@ -437,7 +437,7 @@
             </div>
 
             <div class="formFooter">
-                <span class="formFooterText">Нажимая кнопку вы соглашаетесь с <a href="#">условиями использования</a></span>
+                <span class="formFooterText">Нажимая кнопку вы соглашаетесь с <a href="/terms">условиями использования</a></span>
                 <button class="button button_size_big formFooterButton" type="submit">Оставить заявку</button>
             </div>
 
