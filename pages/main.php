@@ -437,7 +437,7 @@
             </div>
 
             <div class="formFooter">
-                <span class="formFooterText">Нажимая кнопку вы соглашаетесь с <a href="/terms">условиями использования</a></span>
+                <span class="formFooterText">Нажимая кнопку вы соглашаетесь с <a href="/terms" target="_blank">условиями использования</a></span>
                 <button class="button button_size_big formFooterButton" type="submit">Оставить заявку</button>
             </div>
 
