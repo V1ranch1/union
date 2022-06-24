@@ -147,8 +147,9 @@
                         <span class="numbersBlockCaption">Фиксированная стоимость</span>
                         <p class="numbersBlockText">Все работы по ремонту вариаторов имеют фиксированную стоимость:</p>
                         <ul class="numbersBlockTextList">
-                            <li class="numbersBlockTextItem">10.000 рублей (для снятых вариаторов)</li>
-                            <li class="numbersBlockTextItem">17.000 рублей (снятие и установка вариатора производится нашими специалистами)</li>
+                            <li class="numbersBlockTextItem">Переборка 10.000 рублей (для снятых вариаторов)</li>
+                            <li class="numbersBlockTextItem">Снятие и установка: <br>7.000 рублей (передний привод) <br>12.000 рублей (полный привод)</li>
+                            <li class="numbersBlockTextItem">Снятие, ремонт и установка: <br>17.000 рублей (передний привод) <br>22.000 рублей (полный привод)</li>
                         </ul>
                         <p class="numbersBlockText">Фиксированная стоимость не включает в себя поврежденные детали, требующие замены, обнаружение которых возможно только после диагностики. Вы можете предоставить для ремонта собственные детали или приобрести их у нас.</p>
                     </div>
@@ -159,7 +160,8 @@
                     <div class="numbersBlockNumber"></div>
                     <div class="numbersBlockInfo">
                         <span class="numbersBlockCaption">Ремонт деталей</span>
-                        <p class="numbersBlockText">Благодаря многолетнему опыту наши специалисты с легкостью справляются с ремонтом разной сложности, например: устранение повреждений корпуса, замена маслянного насоса, восстановление конуса вариатора. Ремонт деталей значительно экономит средства владельца и снижает конечную стоимость ремонта вариатора.</p>
+                        <p class="numbersBlockText">Благодаря многолетнему опыту наши специалисты с легкостью справляются с ремонтом разной сложности, например: устранение повреждений корпуса, замена маслянного насоса, восстановление конуса вариатора.</p> 
+                        <p class="numbersBlockText">Ремонт деталей значительно экономит средства владельца и снижает конечную стоимость ремонта вариатора.</p>
                     </div>
                 </div>
             </li>
@@ -506,7 +508,7 @@
                         <span class="infoBlockInnerItemCaption">Наши телефоны</span>
                         <div class="infoBlockInnerItemText">
                             <a class="infoBlockInnerItemTextValue" href="tel:+7(991)9276247"><span class="infoBlockInnerItemTextValueHightlight">+7 (991)</span> 927-62-47</a>
-                            <a class="infoBlockInnerItemTextValue" href="tel:+7(777)7777777"><span class="infoBlockInnerItemTextValueHightlight">+7 (777)</span> 777-77-77</a>
+                            <a class="infoBlockInnerItemTextValue" href="tel:+7(967)1074554"><span class="infoBlockInnerItemTextValueHightlight">+7 (967)</span> 107-45-54</a>
                         </div>
                     </li>
                     <li class="infoBlockInnerItem">

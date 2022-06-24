@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="keywords" content="Keywords">
-    <meta name="description" content="Description">
+    <meta name="keywords" content="Ремонт вариаторов JATCO">
+    <meta name="description" content="Профессиональный ремонт вариаторов от компании ЮНИОН с гарантией за 72 часа!">
     <title>Юнион Вариаторы<?= $title ? ' | ' . $title : ''; ?></title>
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.png">
@@ -25,7 +25,7 @@
                 <div class="info info_inline headerInfo">
                     <div class="infoInner">
                         <a class="infoValue infoPhone" href="tel:+7(991)9276247"><span class="infoHightlight">+7 (991)</span> 927-62-47</a>
-                        <a class="infoValue infoPhone" href="tel:+7(777)7777777"><span class="infoHightlight">+7 (777)</span> 777-77-77</a>
+                        <a class="infoValue infoPhone" href="tel:+7(967)1074554"><span class="infoHightlight">+7 (967)</span> 107-45-54</a>
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@
                     <div class="info info_inline info_white footerInfo">
                         <div class="infoInner">
                             <a class="infoValue infoPhone" href="tel:+7(991)9276247"><span class="infoHightlight">+7 (991)</span> 927-62-47</a>
-                            <a class="infoValue infoPhone" href="tel:+7(777)7777777"><span class="infoHightlight">+7 (777)</span> 777-77-77</a>
+                            <a class="infoValue infoPhone" href="tel:+7(777)7777777"><span class="infoHightlight">+7 (967)</span> 107-45-54</a>
                         </div>
                     </div>
 
