@@ -27,7 +27,7 @@
     $mailContent .= "Время: {$formTime}\r\n";
     $mailContent .= "Комментарий: {$formComment}";
 
-    mail("order@unionvariators.ru", "Заявка от {$formName} " . date("d-m-Y"), $mailContent, $mailHeaders);
+    mail("order@unionvariators.ru", "Заявка от {$formName} {$formPhone} " . date("d-m-Y"), $mailContent, $mailHeaders);
 
     header('Content-type: application/json; charset=UTF-8');
     echo json_encode(['response' => true]);
