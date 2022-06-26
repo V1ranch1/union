@@ -16,7 +16,7 @@
     $formComment = isset($_POST['comment']) && $_POST['comment'] ? $_POST['comment'] : 'Не указано';
 
     $mailHeaders = "Content-type: text/plain; charset=UTF-8\r\n";
-    $mailHeaders .= "From: <noreply@unionvariators.ru>\r\n";
+    $mailHeaders .= "From: <order@unionvariators.ru>\r\n";
     $mailHeaders .= "X-Mailer: PHP/" . phpversion();
 
     $mailContent = "";
