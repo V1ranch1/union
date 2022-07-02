@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /
 Host: unionvariators.ru
 Sitemap: https://unionvariators.ru/sitemap.xml
