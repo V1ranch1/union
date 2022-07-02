@@ -8,6 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="keywords" content="Ремонт вариаторов JATCO">
     <meta name="description" content="Профессиональный ремонт вариаторов от компании ЮНИОН с гарантией за 72 часа!">
+    <meta name="yandex-verification" content="4195a0e700255dd7">
     <title>Юнион Вариаторы<?= $title ? ' | ' . $title : ''; ?></title>
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.png">
