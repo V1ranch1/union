@@ -38,23 +38,23 @@
                     <span class="socialCaption">Мы в соцсетях</span>
                     <ul class="socialList">
                         <li class="socialListItem">
-                            <a class="socialLink" href="#">
+                            <a class="socialLink" href="https://vk.com/unionvariators">
                                 <img class="socialIcon" src="/images/social/vk.svg" alt="Юнион Вариаторы Вконтакте">
                             </a>
                         </li>
                         <li class="socialListItem">
-                            <a class="socialLink" href="#">
-                                <img class="socialIcon" src="/images/social/ig.svg" alt="Юнион Вариаторы Инстаграм">
+                            <a class="socialLink" href="https://t.me/unionvariators">
+                                <img class="socialIcon" src="/images/social/telegram.svg" alt="Юнион Вариаторы Телеграм">
                             </a>
                         </li>
                         <li class="socialListItem">
-                            <a class="socialLink" href="#">
-                                <img class="socialIcon" src="/images/social/fb.svg" alt="Юнион Вариаторы Фейсбук">
+                            <a class="socialLink" href="https://www.drive2.ru/users/unionvariators/">
+                                <img class="socialIcon" src="/images/social/drive2.svg" alt="Юнион Вариаторы Драйвту">
                             </a>
                         </li>
                         <li class="socialListItem">
-                            <a class="socialLink" href="#">
-                                <img class="socialIcon" src="/images/social/tw.svg" alt="Юнион Вариаторы Твиттер">
+                            <a class="socialLink" href="https://ok.ru/group/70000000281023">
+                                <img class="socialIcon" src="/images/social/ok.svg" alt="Юнион Вариаторы Одноклассники">
                             </a>
                         </li>
                     </ul>
@@ -131,23 +131,23 @@
                         <span class="socialCaption">Мы в соцсетях</span>
                         <ul class="socialList">
                             <li class="socialListItem">
-                                <a class="socialLink" href="#">
+                                <a class="socialLink" href="https://vk.com/unionvariators">
                                     <img class="socialIcon" src="/images/social/vk.svg" alt="Юнион Вариаторы Вконтакте">
                                 </a>
                             </li>
                             <li class="socialListItem">
-                                <a class="socialLink" href="#">
-                                    <img class="socialIcon" src="/images/social/ig.svg" alt="Юнион Вариаторы Инстаграм">
+                                <a class="socialLink" href="https://t.me/unionvariators">
+                                    <img class="socialIcon" src="/images/social/telegram.svg" alt="Юнион Вариаторы Телеграм">
                                 </a>
                             </li>
                             <li class="socialListItem">
-                                <a class="socialLink" href="#">
-                                    <img class="socialIcon" src="/images/social/fb.svg" alt="Юнион Вариаторы Фейсбук">
+                                <a class="socialLink" href="https://www.drive2.ru/users/unionvariators/">
+                                    <img class="socialIcon" src="/images/social/drive2.svg" alt="Юнион Вариаторы Драйвту">
                                 </a>
                             </li>
                             <li class="socialListItem">
-                                <a class="socialLink" href="#">
-                                    <img class="socialIcon" src="/images/social/tw.svg" alt="Юнион Вариаторы Твиттер">
+                                <a class="socialLink" href="https://ok.ru/group/70000000281023">
+                                    <img class="socialIcon" src="/images/social/ok.svg" alt="Юнион Вариаторы Одноклассники">
                                 </a>
                             </li>
                         </ul>
